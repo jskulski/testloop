@@ -6,6 +6,6 @@ from poetry_publish.publish import poetry_publish
 
 def publish():
     poetry_publish(
-        package_root=Path(your_project.__file__).parent.parent,
-        version=your_project.__version__,
+        package_root=Path(testloop.__file__).parent.parent,
+        version=testloop.__version__,
     )

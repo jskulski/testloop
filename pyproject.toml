@@ -5,8 +5,11 @@ description = "A nimble testing tool"
 authors = ["Jon Skulski <jskulski@gmail.com>"]
 readme = "README.md"
 
+[project.urls]
+homepage = "https://github.com/jskulski/testloop"
+
 [tool.poetry.scripts]
-publish = 'testloop:publish'
+testloop = "testloop.testloop:cli"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -14,7 +17,6 @@ python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^2.20.0"
-poetry-publish = "^0.5.0"
 
 [build-system]
 requires = ["poetry-core"]

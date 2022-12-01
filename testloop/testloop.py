@@ -2,6 +2,7 @@ import sys
 import os
 import subprocess
 
+
 files = [
     "tests/"
 ]
@@ -74,7 +75,7 @@ def loop():
     os.system(loop_command())
 
 
-if __name__ == '__main__':
+def run():
     try:
         mode = sys.argv[1]
     except IndexError:
@@ -90,3 +91,9 @@ if __name__ == '__main__':
             f"testloop: usage `{TESTLOOP_PATH} [mode]` "
             f"(invalid mode={mode} specified. must be `loop` or `test`)"
         )
+
+def cli():
+    run()
+
+if __name__ == '__main__':
+    run()

@@ -9,7 +9,7 @@ A nimble testing tool
 $ python testloop.py
 [Wed Nov 30 20:34:50 2022] Running: python /home/jskulski/Code/jskulski/testloop/testloop.py test .
 
-testloop: cwd=/home/jskulski/Code/jskulski/testloop 
+testloop: cwd=/home/jskulski/Code/jskulski/testloop
 testloop: running test_command=`pytest -v --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb -s tests/`
 
 
@@ -18,7 +18,7 @@ platform linux -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0
 rootdir: /home/jskulski/Code/jskulski/ballooning
 plugins: cov-2.12.1, asyncio-0.20.2, syrupy-3.0.5, time-machine-2.8.2, anyio-3.6.2, aiohttp-1.0.4
 asyncio: mode=Mode.STRICT
-collected 9 items / 2 deselected / 7 selected                                                     
+collected 9 items / 2 deselected / 7 selected
 
 tests/test_initial_design_sprint.py s......                                                 [100%]
 
@@ -33,7 +33,7 @@ testloop.py: reads itself for configuration, builds a pytest command
 
 Running `python testloop.py` starts a filewatcher that runs pytest
 
-When a file changes: 
+When a file changes:
 1. `testloop` reads itself for pytest options
 1. builds a pytest command from those options
 1. runs that pytest command and reports results
@@ -57,7 +57,7 @@ Note, the initial run of testloop will install dependencies at runtime.
 
 ## Design
 
-Testloop is a nimble developement testing tool. 
+Testloop is a nimble developement testing tool.
 
 Nimble development tools are designed to be:
 
@@ -70,13 +70,21 @@ Nimble development tools are designed to be:
 - self-installing dependencies allow for an unfolding feature set
 
 
-## Roadmap
+## Changelog
 
 v 0.1.0
 
-- [x] create readme, package and publish 
-- [x] add a test for testloop
-- [ ] handle pip install. do we copy testloop.py everywhere? 
+- create readme, package and publish
+- add a test for testloop
+
+## Roadmap
+
+v 0.1.1
+
+- [x] testloop executable script
+- [ ] how do we handle configuration if we install via pip?
+- [ ] fix PATHING
+
 
 v 0.2.0
 
@@ -86,9 +94,7 @@ v 0.2.0
 - [ ] cli options to turn on/off dependencies
 - [ ] add pudb option, build configurations as object
 
-Future 
+Future
 
 - [ ] tui / gui / editor integrations
 - [ ] create system-wide venv for dependencies OR consider rewriting as an executable + config
-
-
