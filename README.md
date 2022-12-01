@@ -5,7 +5,6 @@ A nimble testing tool
 ## Usage
 
 
-
 ```shell
 $ python testloop.py
 [Wed Nov 30 20:34:50 2022] Running: python /home/jskulski/Code/jskulski/testloop/testloop.py test .
@@ -76,6 +75,7 @@ Nimble development tools are designed to be:
 v 0.1.0
 
 - [x] create readme, package and publish 
+- [x] add a test for testloop
 - [ ] handle pip install. do we copy testloop.py everywhere? 
 
 v 0.2.0
@@ -84,6 +84,7 @@ v 0.2.0
 - [ ] direct skul.ski to a hosting service, update install doc
 - [ ] system binary `testloop` if installed via pip
 - [ ] cli options to turn on/off dependencies
+- [ ] add pudb option, build configurations as object
 
 Future 
 

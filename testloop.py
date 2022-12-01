@@ -2,12 +2,8 @@ import sys
 import os
 import subprocess
 
-
-# TODO package and publish
-# TODO add pudb
-
 files = [
-    "~/Code/jskulski/ballooning/tests/"
+    "tests/"
 ]
 
 # Beyond
