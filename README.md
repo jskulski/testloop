@@ -75,16 +75,23 @@ Nimble development tools are designed to be:
 v 0.1.0
 
 - create readme, package and publish
+- testloop in a working state (read self for config, watches files, runs pytest)
 - add a test for testloop
-
-## Roadmap
 
 v 0.1.1
 
+- adding CLI script, pre-commits
+- updating pypi page
+
+### Current
+
+
+v 0.1.5
 - [x] testloop executable script
 - [ ] how do we handle configuration if we install via pip?
 - [ ] fix PATHING
 
+### Future
 
 v 0.2.0
 
@@ -94,7 +101,6 @@ v 0.2.0
 - [ ] cli options to turn on/off dependencies
 - [ ] add pudb option, build configurations as object
 
-Future
 
 - [ ] tui / gui / editor integrations
 - [ ] create system-wide venv for dependencies OR consider rewriting as an executable + config

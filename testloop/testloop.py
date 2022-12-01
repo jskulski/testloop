@@ -2,6 +2,8 @@ import sys
 import os
 import subprocess
 
+__version__ = "0.1.1"
+
 
 files = [
     "tests/"
