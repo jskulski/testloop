@@ -6,13 +6,12 @@ files = [
     "tests/"
 ]
 
-# Beyond
 opts = {}
 
 django_opts = dict(
     db="--reuse-db",
 )
-# opts.update(django_opts)
+
 pytest_xdist_opts = dict(
     num_parallel='-n0'
 )
@@ -37,8 +36,6 @@ CWD_PATH = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(CWD_PATH)
 TESTLOOP_PATH = os.path.abspath(__file__)
 
-print(CWD_PATH, PROJECT_PATH, TESTLOOP_PATH)
-
 
 def install_dependencies():
     for dep in dependencies:
@@ -49,7 +46,6 @@ def install_dependencies():
 
 
 def test_command():
-    # TODO: '$*'
     command_parts = ["pytest", "-v"] + list(opts.values()) + files
     return ' '.join(command_parts)
 
